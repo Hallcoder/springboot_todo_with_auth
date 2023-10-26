@@ -5,6 +5,6 @@ import rw.ac.rca.springboot_todo_with_auth.model.User;
 
 import java.util.Optional;
 
-public interface UserRepository extends JpaRepository<Integer, User> {
+public interface UserRepository extends JpaRepository<User, Integer> {
     Optional<User> findByEmail(String email);
 }
